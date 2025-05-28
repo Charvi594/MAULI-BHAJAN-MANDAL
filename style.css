@@ -5,6 +5,11 @@ body {
     color: white;
   }
 
+  section {
+    padding: 60px 20px;
+  }
+
+
   .home{
     background: #0a0a0a;
   }
@@ -23,6 +28,10 @@ body {
     margin-left: 100px;
   }
 
+header img:hover{
+  cursor: pointer;
+}
+
   nav a {
     margin: 0 15px;
     color: white;
@@ -38,6 +47,11 @@ body {
   .language-login span {
     margin-right: 20px;
     color: gold;
+    
+  }
+
+  .language-login span:hover{
+    cursor: pointer;
   }
 
   .hero {
@@ -587,4 +601,8 @@ width:350px;
   font-weight: bold;
   cursor: pointer;
   z-index: 10000;
+}
+
+html {
+  scroll-behavior: smooth;
 }
