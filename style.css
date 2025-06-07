@@ -356,16 +356,20 @@ padding: 0 67px;
   justify-content:center;
   min-height:100vh;}
 
-  .music-slide{
-    background: white;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-    width: 370px;
-    height: 350px;
-   padding: 20px 0 20px 20px;
-    position: relative;
-    text-align: center;
-  }
+ .music-slide {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  width: 370px;
+  min-height: 350px; /* allows auto growth */
+  padding: 20px;
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 
   .swiper {
     width: 100%;
@@ -374,7 +378,7 @@ padding: 0 67px;
   .swiperslide {
     display: flex;
     justify-content: center;
-    padding: 0px 50px 0px 50px;
+    
   }
 
   .mySwiper2 .swiper-wrapper{
@@ -392,7 +396,7 @@ width:350px;
 @media only screen and (max-width: 600px) {
   .artist-card {
     width: 90%;
-    height: 650px;
+    height: 700px;
     padding: 15px;
   }
 
@@ -435,7 +439,7 @@ width:350px;
 
   .music-slide img {
     width: 100%;
-    height: auto;
+    height: 200px;
   }
 
   h2 {
@@ -737,6 +741,21 @@ html {
     max-width: 100%;
     height: auto;
   } 
+    .artist-card {
+    width: 90%;
+    height: 700px;
+    padding: 15px;
+  }
+
+  .swiper-slide {
+  display: flex;
+  align-items: stretch;  /* Makes all slides equal height */
+}
+
+.swiper-wrapper {
+  align-items: stretch !important;
+}
+
 
   /* Optional: tighten spacing inside cards or text */
   .team .artist-card,
