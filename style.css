@@ -615,44 +615,6 @@ html {
 /* ================= MOBILE RESPONSIVE DESIGN =================== */
 
 @media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  header img {
-    width: 120px;
-    margin-bottom: 10px;
-  }
-
-  nav#mainNav {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 10px;
-  }
-
-  .menu-toggle {
-    display: block;
-    cursor: pointer;
-  }
-
-  .menu-toggle span {
-    background-color: #333;
-    height: 3px;
-    width: 25px;
-    margin: 4px 0;
-    display: block;
-  }
-
-  nav#mainNav {
-    display: none;
-  }
-
-  nav#mainNav.active {
-    display: flex;
-  }
 
   .hero {
     flex-direction: column;
@@ -695,10 +657,6 @@ html {
     display: none;
   }
 
-  .language-login {
-    flex-direction: column;
-    align-items: center;
-  }
 
   section.welcome {
     padding: 20px;
@@ -708,5 +666,35 @@ html {
   .details span {
     display: block;
     margin: 5px 0;
+  }
+
+   section {
+    margin-top: -30px !important;
+    margin-bottom: -10px !important;
+    padding-top: -50px !important;
+    padding-bottom: 0px !important;
+  }
+
+  .team,
+  .programs,
+  .how-it-works {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  .programs {
+    padding-top: 10px !important;
+  }
+
+  .how-it-works {
+    padding-top: 10px !important;
+  }
+
+  /* Optional: tighten spacing inside cards or text */
+  .team .artist-card,
+  .program-card,
+  .how-step {
+    margin-bottom: 10px;
+    padding: 10px;
   }
 }
