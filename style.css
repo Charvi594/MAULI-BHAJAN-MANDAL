@@ -609,3 +609,103 @@ width:350px;
 html {
   scroll-behavior: smooth;
 }
+
+
+
+/* ================= MOBILE RESPONSIVE DESIGN =================== */
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  header img {
+    width: 120px;
+    margin-bottom: 10px;
+  }
+
+  nav#mainNav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+  }
+
+  .menu-toggle span {
+    background-color: #333;
+    height: 3px;
+    width: 25px;
+    margin: 4px 0;
+    display: block;
+  }
+
+  nav#mainNav {
+    display: none;
+  }
+
+  nav#mainNav.active {
+    display: flex;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .hero img {
+    width: 80%;
+    max-width: 300px;
+    margin: 20px auto;
+  }
+
+  .hero-text h1 {
+    font-size: 24px;
+  }
+
+  .hero-text p {
+    font-size: 16px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  .artist-card {
+    padding: 15px;
+    font-size: 14px;
+  }
+
+  .artist-card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+
+  .language-login {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section.welcome {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .details span {
+    display: block;
+    margin: 5px 0;
+  }
+}
