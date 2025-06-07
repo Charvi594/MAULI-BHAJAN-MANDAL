@@ -392,7 +392,7 @@ width:350px;
 @media only screen and (max-width: 600px) {
   .artist-card {
     width: 90%;
-    height: auto;
+    height: 650px;
     padding: 15px;
   }
 
@@ -689,6 +689,54 @@ html {
   .how-it-works {
     padding-top: 10px !important;
   }
+
+  .swiper {
+    margin-bottom: 10px !important;
+    padding-bottom: 0 !important;
+  }
+
+  .programs {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+  }
+
+  .program-card, .swiper-slide {
+    width: 90% !important;
+    height: auto !important;
+    margin: 0 auto 20px auto;  /* Center the cards with spacing */
+  }
+
+  .program-card img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover;
+  }
+
+  .program-card .card-content {
+    padding: 10px;
+    text-align: center;
+  } 
+
+   .how-it-works {
+    height: auto;
+    padding: 20px;
+  }
+
+  .how-it-works-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .how-step {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .how-step img {
+    max-width: 100%;
+    height: auto;
+  } 
 
   /* Optional: tighten spacing inside cards or text */
   .team .artist-card,
